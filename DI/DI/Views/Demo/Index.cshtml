@@ -1,0 +1,12 @@
+﻿@inject DI.Models.IHelloWorldService helloWorldService
+
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<h5>
+    @helloWorldService.SaysHello() Reader!!!
+</h5>
